@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/static/js/postrequest.js"></script>
+	<script src="/static/js/getrequest.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+ 
+<body>
+	<div class="container ">
+		<div class="w3-center">
+			<img 
+			type="image"
+			height="150"
+			width="300"
+			src="http://store.hogaonline.com/IMG/logo-desktop.png"
+			alt="hoga-logo"
+			/>
+			<h1 class="w3-font-bold w3-jumbo"> Welcome</h1>
+          	<h2> Thank you for Signing Up.</h2>
+         	<h2> Please upload your Age proof Document to complete your registration.</h2>
+		</div>
+		<!-- <h3>NodeJS/Express - Multer- Upload MultipartFile</h3> -->
+	<div class="form-body" style="border: 'dashed'; height:'300px'; width:'900px'; "> 
+		<form class="w3-container w3-card-2 w3-margin w3-mobile w3-padding w3-panel w3-border w3-hover-border-black"  method="POST" enctype="multipart/form-data" id="fileUploadForm">
+			<div class="w3-center">
+				<label class="w3-center w3-xlarge w3-text-grey" for="uploadfile">Click on the button to upload files</label><br />
+				<div class="w3-center">
+					<!-- <label class="btn">Browse File</label><br /> -->
+					<label class="w3-button w3-border w3-section w3-light-grey w3-ripple w3-hover-border-black" onclick="document.getElementById('uploadfile').click()">Browse File</label>
+					<input type="file" style="display:none" class="w3-input" id="uploadfile" placeholder="Upload File"  name="uploadfile"></input>
+				</div>
+			</div>
+			<!-- <div class="form-group"> 
+			    <div class="col-sm-offset-2 col-sm-5">
+			      
+			    </div>
+			</div> -->
+			
+		</form>
+		<div class="w3-center">
+			<button type="submit" class="w3-button w3-section w3-blue w3-ripple" id="btnSubmit">Upload</button>
+			<button type="button" class="w3-button w3-section w3-blue w3-ripple" id="btnGetFiles">Files</button>
+			
+		</div>
+	</div>
+		<!-- <hr/> -->
+		<div class="col-sm-offset-2 w3-large" id="listFiles">
+		</div>
+	<div class="w3-center">
+		<h3>  Accepted documents are PAN Card,Drivers Licence,Passport,Voters ID Card,Bank Passbook or Aadhar Card </h3>
+	</div>
+	</div>
+</body>
+</html>
